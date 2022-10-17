@@ -1,0 +1,40 @@
+[debug] [2022-10-17T13:10:38.976Z] ----------------------------------------------------------------------
+[debug] [2022-10-17T13:10:38.977Z] Command:       /usr/local/bin/firebase /Users/qiujiaying/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase login
+[debug] [2022-10-17T13:10:38.978Z] CLI Version:   11.8.0
+[debug] [2022-10-17T13:10:38.978Z] Platform:      darwin
+[debug] [2022-10-17T13:10:38.978Z] Node Version:  v16.16.0
+[debug] [2022-10-17T13:10:38.979Z] Time:          Mon Oct 17 2022 21:10:38 GMT+0800 (GMT+08:00)
+[debug] [2022-10-17T13:10:38.979Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-17T13:10:38.985Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[debug] [2022-10-17T13:10:39.644Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-10-17T13:10:39.648Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=859262233&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-10-17T13:10:56.626Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
+[debug] [2022-10-17T13:10:56.630Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[debug] [2022-10-17T13:12:11.660Z] Token Fetch Error: FirebaseError: Failed to make request to https://accounts.google.com/o/oauth2/token
+    at RetryOperation._fn (/Users/qiujiaying/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/apiv2.js:242:31)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[debug] [2022-10-17T13:12:11.679Z] >>> [apiv2][query] POST https://auth.firebase.tools/attest [none]
+[debug] [2022-10-17T13:12:11.680Z] >>> [apiv2][body] POST https://auth.firebase.tools/attest {"session_id":"eafdd8c7-23ee-441a-8373-55ba65a4585f"}
+[debug] [2022-10-17T13:12:12.749Z] <<< [apiv2][status] POST https://auth.firebase.tools/attest 200
+[debug] [2022-10-17T13:12:12.751Z] <<< [apiv2][body] POST https://auth.firebase.tools/attest {"token":"KWSUNt9fG9X0_9MmIj2Iz8mtIjwHBIJkdsnz4KjwZSc"}
+[info] 
+[info] To sign in to the Firebase CLI:
+[info] 
+[info] 1. Take note of your session ID:
+[info] 
+[info]    EAFDD
+[info] 
+[info] 2. Visit the URL below on any device and follow the instructions to get your code:
+[info] 
+[info]    https://auth.firebase.tools/login?code_challenge=zwqlucGlyyWT1JkUMgBHbvphkVSmRgVyaxoTaPIJ2Eo&session=eafdd8c7-23ee-441a-8373-55ba65a4585f&attest=KWSUNt9fG9X0_9MmIj2Iz8mtIjwHBIJkdsnz4KjwZSc
+[info] 
+[info] 3. Paste or enter the authorization code below once you have it:
+[info] 
